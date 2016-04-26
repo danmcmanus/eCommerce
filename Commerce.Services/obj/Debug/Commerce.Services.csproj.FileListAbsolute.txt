@@ -1,0 +1,9 @@
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Services.dll
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Services.pdb
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Contracts.dll
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Model.dll
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Contracts.pdb
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Model.pdb
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\obj\Debug\Commerce.Services.csprojResolveAssemblyReference.cache
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\obj\Debug\Commerce.Services.dll
+c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\obj\Debug\Commerce.Services.pdb

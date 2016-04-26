@@ -1,0 +1,5 @@
+c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\bin\Debug\Commerce.Model.dll
+c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\bin\Debug\Commerce.Model.pdb
+c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\obj\Debug\Commerce.Model.csprojResolveAssemblyReference.cache
+c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\obj\Debug\Commerce.Model.dll
+c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\obj\Debug\Commerce.Model.pdb
