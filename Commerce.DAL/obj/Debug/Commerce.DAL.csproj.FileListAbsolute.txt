@@ -12,5 +12,5 @@ c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.DAL\bin\D
 c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.csprojResolveAssemblyReference.cache
 c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.dll
 c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.pdb
-c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.Migrations.initial.resources
-c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.csproj.GenerateResource.Cache
+C:\Users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.Migrations.initial.resources
+C:\Users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.DAL\obj\Debug\Commerce.DAL.csproj.GenerateResource.Cache

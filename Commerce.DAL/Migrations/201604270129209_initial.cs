@@ -8,6 +8,23 @@ namespace Commerce.DAL.Migrations
         public override void Up()
         {
             CreateTable(
+                "dbo.CartCoupons",
+                c => new
+                    {
+                        CartCouponId = c.Int(nullable: false, identity: true),
+                        CouponId = c.Int(nullable: false),
+                        CartId = c.Guid(nullable: false),
+                        CouponCode = c.String(maxLength: 10),
+                        CouponType = c.String(),
+                        Value = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        CouponDescription = c.String(maxLength: 150),
+                        AppliesToCouponId = c.Int(nullable: false),
+                    })
+                .PrimaryKey(t => t.CartCouponId)
+                .ForeignKey("dbo.Carts", t => t.CartId, cascadeDelete: true)
+                .Index(t => t.CartId);
+            
+            CreateTable(
                 "dbo.CartItems",
                 c => new
                     {
@@ -44,6 +61,33 @@ namespace Commerce.DAL.Migrations
                 .PrimaryKey(t => t.CartId);
             
             CreateTable(
+                "dbo.Coupons",
+                c => new
+                    {
+                        CouponId = c.Int(nullable: false, identity: true),
+                        CouponCode = c.String(maxLength: 10),
+                        CouponTypeId = c.Int(nullable: false),
+                        CouponDescription = c.String(maxLength: 150),
+                        AppliesToProductId = c.Int(nullable: false),
+                        Value = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        MinSpend = c.Decimal(nullable: false, precision: 18, scale: 2),
+                        MultipleUse = c.Boolean(nullable: false),
+                        AssignedTo = c.String(),
+                    })
+                .PrimaryKey(t => t.CouponId);
+            
+            CreateTable(
+                "dbo.CouponTypes",
+                c => new
+                    {
+                        CouponTypeId = c.Int(nullable: false, identity: true),
+                        CouponModule = c.String(),
+                        Type = c.String(),
+                        Description = c.String(),
+                    })
+                .PrimaryKey(t => t.CouponTypeId);
+            
+            CreateTable(
                 "dbo.Customers",
                 c => new
                     {
@@ -62,6 +106,8 @@ namespace Commerce.DAL.Migrations
                     {
                         OrderItemId = c.Int(nullable: false, identity: true),
                         ProductId = c.Int(nullable: false),
+                        Description = c.String(),
+                        ImageUrl = c.String(maxLength: 255),
                         Quantity = c.Int(nullable: false),
                         Price = c.Decimal(nullable: false, precision: 18, scale: 2),
                         Order_OrderId = c.Int(),
@@ -86,16 +132,21 @@ namespace Commerce.DAL.Migrations
         {
             DropForeignKey("dbo.OrderItems", "Order_OrderId", "dbo.Orders");
             DropForeignKey("dbo.CartItems", "CartId", "dbo.Carts");
+            DropForeignKey("dbo.CartCoupons", "CartId", "dbo.Carts");
             DropForeignKey("dbo.CartItems", "ProductId", "dbo.Products");
             DropIndex("dbo.OrderItems", new[] { "Order_OrderId" });
             DropIndex("dbo.CartItems", new[] { "ProductId" });
             DropIndex("dbo.CartItems", new[] { "CartId" });
+            DropIndex("dbo.CartCoupons", new[] { "CartId" });
             DropTable("dbo.Orders");
             DropTable("dbo.OrderItems");
             DropTable("dbo.Customers");
+            DropTable("dbo.CouponTypes");
+            DropTable("dbo.Coupons");
             DropTable("dbo.Carts");
             DropTable("dbo.Products");
             DropTable("dbo.CartItems");
+            DropTable("dbo.CartCoupons");
         }
     }
 }

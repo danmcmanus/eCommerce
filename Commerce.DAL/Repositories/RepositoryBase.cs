@@ -1,4 +1,4 @@
-﻿using Commerce.Contracts.Repository;
+﻿using Commerce.Contracts.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Commerce.DAL.Repository
+namespace Commerce.DAL.Repositories
 {
     public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
     {

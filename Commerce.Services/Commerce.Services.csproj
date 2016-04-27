@@ -49,9 +49,21 @@
       <Project>{12B78F62-7A13-4CB2-AF6F-9E7E1F087CEF}</Project>
       <Name>Commerce.Contracts</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Commerce.DAL\Commerce.DAL.csproj">
+      <Project>{3aae97e3-03a2-4e56-bbd0-183b231b61ff}</Project>
+      <Name>Commerce.DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Commerce.Model\Commerce.Model.csproj">
       <Project>{F4D32C88-9808-49B2-8FAA-6568416FC530}</Project>
       <Name>Commerce.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commerce.Modules.Coupons.MoneyOff\Commerce.Modules.Coupons.MoneyOff.csproj">
+      <Project>{b8296d35-0af3-41b1-ad42-24153d6ab847}</Project>
+      <Name>Commerce.Modules.Coupons.MoneyOff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commerce.Modules.Coupons.PercentOff\Commerce.Modules.Coupons.PercentOff.csproj">
+      <Project>{8d530043-933f-4765-9ee6-c6e86c1776b8}</Project>
+      <Name>Commerce.Modules.Coupons.PercentOff</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

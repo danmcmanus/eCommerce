@@ -1,9 +1,8 @@
 using System;
 using Microsoft.Practices.Unity;
 using Microsoft.Practices.Unity.Configuration;
-using Commerce.Contracts.Repository;
+using Commerce.Contracts.Repositories;
 using Commerce.Model;
-using Commerce.DAL.Repository;
 using Commerce.DAL.Repositories;
 
 namespace Commerce.Web.App_Start

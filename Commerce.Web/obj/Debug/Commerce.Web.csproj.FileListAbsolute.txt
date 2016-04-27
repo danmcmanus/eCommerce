@@ -101,3 +101,7 @@ c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Web\bin\M
 c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Web\bin\Microsoft.Practices.Unity.RegistrationByConvention.xml
 c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Web\bin\Commerce.Services.dll
 c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Web\bin\Commerce.Services.pdb
+C:\Users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Web\bin\Commerce.Modules.Coupons.MoneyOff.dll
+C:\Users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Web\bin\Commerce.Modules.Coupons.PercentOff.dll
+C:\Users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Web\bin\Commerce.Modules.Coupons.MoneyOff.pdb
+C:\Users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Web\bin\Commerce.Modules.Coupons.PercentOff.pdb

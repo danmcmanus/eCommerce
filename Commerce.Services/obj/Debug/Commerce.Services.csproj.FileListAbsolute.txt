@@ -7,3 +7,11 @@ c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\
 c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\obj\Debug\Commerce.Services.csprojResolveAssemblyReference.cache
 c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\obj\Debug\Commerce.Services.dll
 c:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\obj\Debug\Commerce.Services.pdb
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Modules.Coupons.MoneyOff.dll
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Modules.Coupons.PercentOff.dll
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Modules.Coupons.MoneyOff.pdb
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.Modules.Coupons.PercentOff.pdb
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.DAL.dll
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\EntityFramework.dll
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\Commerce.DAL.pdb
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Services\bin\Debug\EntityFramework.xml

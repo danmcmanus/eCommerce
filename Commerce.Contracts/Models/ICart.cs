@@ -9,8 +9,8 @@ namespace Commerce.Contracts.Models
     public interface ICart
     {
         Guid CartId { get; set; }
-        ICollection<ICartItem> ICartItem { get; set; }
-        ICollection<ICartCoupon> ICartCoupon { get; set; }
+        ICollection<ICartItem> ICartItems { get;  }
+        ICollection<ICartCoupon> ICartCoupons { get;  }
         DateTime date { get; set; }
         
         void AddCartItem(ICartItem item);

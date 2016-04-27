@@ -3,3 +3,5 @@ c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\bin
 c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\obj\Debug\Commerce.Model.csprojResolveAssemblyReference.cache
 c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\obj\Debug\Commerce.Model.dll
 c:\users\mcman\documents\visual studio 2015\Projects\Commerce\Commerce.Model\obj\Debug\Commerce.Model.pdb
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Model\bin\Debug\Commerce.Contracts.dll
+C:\Users\mcman\Documents\Visual Studio 2015\Projects\Commerce\Commerce.Model\bin\Debug\Commerce.Contracts.pdb

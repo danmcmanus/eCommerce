@@ -1,8 +1,10 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Administration";
 }
 <h2>Administrator Access</h2>
 
 @Html.ActionLink("Product Admin", "ProductList", null, new {@class = "btn btn-lg btn-info" })
+@Html.ActionLink("Coupon Types", "CouponTypeList", null, new { @class="btn btn-lg btn-info" })
+@Html.ActionLink("Coupons", "CouponList", null, new {@class="btn btn-lg btn-info"})
 

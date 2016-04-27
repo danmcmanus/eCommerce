@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Commerce.Modules.Coupons.MoneyOff
 {
-    public class CouponModule : ICouponModule
+    public class Coupon_Module : ICouponModule
     {
         public void ProcessCoupon(ICoupon coupon, ICart cart, ICartCoupon cartCoupon)
         {

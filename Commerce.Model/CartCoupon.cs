@@ -10,17 +10,17 @@ namespace Commerce.Model
 {
     public class CartCoupon : ICartCoupon
     {
-        public int AppliesToCouponId { get; set; }
-        public Guid CartId { get; set; }
         public int CartCouponId { get; set; }
-        public decimal Value { get; set; }
+        public int CouponId { get; set; }
+        public Guid CartId { get; set; }
 
         [MaxLength(10)]
         public string CouponCode { get; set; }
+        public string CouponType { get; set; }
+        public decimal Value { get; set; }
 
         [MaxLength(150)]
         public string CouponDescription { get; set; }
-        public int CouponId { get; set; }
-        public string CouponType { get; set; }
+        public int AppliesToCouponId { get; set; }
     }
 }

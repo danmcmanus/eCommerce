@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Commerce.Contracts.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Commerce.Model
 {
-    public class Product
+    public class Product : IProduct
     {
         public int ProductId { get; set; }
 

@@ -1,7 +1,6 @@
-﻿using Commerce.Contracts.Repository;
+﻿using Commerce.Contracts.Repositories;
 using Commerce.DAL;
 using Commerce.DAL.Repositories;
-using Commerce.DAL.Repository;
 using Commerce.Model;
 using Commerce.Services;
 using System;
@@ -17,28 +16,46 @@ namespace Commerce.Web.Controllers
         IRepositoryBase<Customer> customers;
         IRepositoryBase<Product> products;
         IRepositoryBase<Cart> carts;
+		IRepositoryBase<Coupon> coupons;
+		IRepositoryBase<CouponType> couponTypes;
+		IRepositoryBase<CartCoupon> cartCoupons;
+
         CartService cartService;
-        public HomeController(IRepositoryBase<Customer> customers, IRepositoryBase<Product> products, IRepositoryBase<Cart> carts)
+
+        //public HomeController(IRepositoryBase<Customer> customers, IRepositoryBase<Product> products, IRepositoryBase<Cart> carts, IRepositoryBase<Coupon> coupons, IRepositoryBase<CouponType> couponTypes, IRepositoryBase<CartCoupon> cartCoupons)
+        public HomeController(IRepositoryBase<Customer> customers, IRepositoryBase<Product> products, IRepositoryBase<Cart> carts, IRepositoryBase<Coupon> coupons, IRepositoryBase<CartCoupon> cartCoupons, IRepositoryBase<CouponType> couponTypes)
         {
             this.customers = customers;
             this.products = products;
             this.carts = carts;
-            cartService = new CartService(this.carts);
+			this.coupons = coupons;
+			this.couponTypes = couponTypes;
+			this.cartCoupons = cartCoupons;
+            cartService = new CartService(this.carts,this.coupons, this.cartCoupons,this.couponTypes);
         }
 
         public ActionResult CartSummary()
         {
             var model = cartService.GetCart(this.HttpContext);
 
-            return View(model.CartItems);
+            return View(model);
         }
 
         public ActionResult AddToCart(int id)
         {
-            cartService.AddToCart(this.HttpContext, id, 1); //always add one to the basket
-
+            Cart cart = cartService.GetCart(this.HttpContext);
+            cartService.AddToCart(this.HttpContext,id,1); //always add one to the cart
+            
+			
             return RedirectToAction("CartSummary");
         }
+
+		public ActionResult AddCartCoupon(string couponCode)
+		{
+			cartService.AddCoupon(couponCode,this.HttpContext);
+
+			return RedirectToAction("CartSummary");
+		}
         public ActionResult Index()
         {
 

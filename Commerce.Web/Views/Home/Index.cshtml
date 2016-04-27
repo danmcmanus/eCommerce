@@ -1,12 +1,9 @@
 ﻿@model IEnumerable<Commerce.Model.Product>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Product List";
 }
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<h2>Products</h2>
 <table class="table">
 
 
@@ -22,9 +19,6 @@
         <td>
             @Html.DisplayFor(modelItem => item.Price)
         </td>
-
-
-
     </tr>
 }
 

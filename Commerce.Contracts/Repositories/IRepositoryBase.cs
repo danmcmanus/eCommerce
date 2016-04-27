@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Commerce.Contracts.Repository
+namespace Commerce.Contracts.Repositories
 {
     public interface IRepositoryBase<TEntity> where TEntity : class
     {

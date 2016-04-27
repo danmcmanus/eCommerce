@@ -1,4 +1,4 @@
-﻿using Commerce.DAL.Repository;
+﻿using Commerce.DAL.Repositories;
 using Commerce.Model;
 using System;
 using System.Collections.Generic;

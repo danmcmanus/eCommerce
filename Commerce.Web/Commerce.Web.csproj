@@ -282,6 +282,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Details.cshtml" />
     <Content Include="Views\Home\CartSummary.cshtml" />
+    <Content Include="Views\Home\AddCartCoupon.cshtml" />
+    <Content Include="Views\Admin\CouponList.cshtml" />
+    <Content Include="Views\Admin\CreateCoupon.cshtml" />
+    <Content Include="Views\Admin\EditCoupon.cshtml" />
+    <Content Include="Views\Admin\EditCouponType.cshtml" />
+    <Content Include="Views\Admin\CreateCouponType.cshtml" />
+    <Content Include="Views\Admin\CouponTypeList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -303,6 +310,14 @@
     <ProjectReference Include="..\Commerce.Model\Commerce.Model.csproj">
       <Project>{f4d32c88-9808-49b2-8faa-6568416fc530}</Project>
       <Name>Commerce.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commerce.Modules.Coupons.MoneyOff\Commerce.Modules.Coupons.MoneyOff.csproj">
+      <Project>{b8296d35-0af3-41b1-ad42-24153d6ab847}</Project>
+      <Name>Commerce.Modules.Coupons.MoneyOff</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commerce.Modules.Coupons.PercentOff\Commerce.Modules.Coupons.PercentOff.csproj">
+      <Project>{8d530043-933f-4765-9ee6-c6e86c1776b8}</Project>
+      <Name>Commerce.Modules.Coupons.PercentOff</Name>
     </ProjectReference>
     <ProjectReference Include="..\Commerce.Services\Commerce.Services.csproj">
       <Project>{EA866C73-3D74-419B-B539-CAB4B8E9C04F}</Project>

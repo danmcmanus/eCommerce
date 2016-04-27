@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Commerce.DAL.Repository
+namespace Commerce.DAL.Repositories
 {
     public class CustomerRepository : RepositoryBase<Customer>
     {

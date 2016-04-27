@@ -1,5 +1,4 @@
-﻿using Commerce.Contracts.Repository;
-using Commerce.DAL.Repository;
+﻿using Commerce.Contracts.Repositories;
 using Commerce.Model;
 using System;
 using System.Collections.Generic;

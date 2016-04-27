@@ -22,5 +22,10 @@ namespace Commerce.DAL
         public DbSet<Cart> Carts { get; set; }
         public DbSet<CartItem> CartItems { get; set; }
 
-    }
+		public DbSet<CartCoupon> CartCoupons { get; set; }
+
+		public DbSet<Coupon> Coupons { get; set; }
+
+		public DbSet<CouponType> CouponTypes { get; set; }
+	}
 }
